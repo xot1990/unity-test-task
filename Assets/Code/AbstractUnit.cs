@@ -16,6 +16,7 @@ public abstract class AbstractUnit : MonoBehaviour
     public StateMachine state;
     public Map map;
     public float motionSpeed;
+    public Dictionary<string, Sprite> sprites;
 
     void Start()
     {
@@ -40,9 +41,8 @@ public abstract class AbstractUnit : MonoBehaviour
         state.OnEnterState();
     }
 
-    protected void OnStart()
+    protected virtual void OnStart()
     {
         map = Map.Get();
-        ChangeState<IdleState>();
     }
 }

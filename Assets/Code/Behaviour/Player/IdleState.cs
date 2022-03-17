@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class IdleState : StateMachine
 {
+    public TileCustom currentTile;
+    private Map _map;
+
     private void Awake()
     {
-        GetActor<AbstractUnit>();
+        _map = Map.Get();
+        GetActor<player>();
     }
 
 
     public override void OnEnterState()
     {
-        
+        currentTile = _map.GetTile(_map.WorldToMapPosition(transform.position));
     }
 
     public override void OnExitState()

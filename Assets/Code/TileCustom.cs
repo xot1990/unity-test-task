@@ -9,6 +9,7 @@ public class TileCustom
     public AbstractUnit placedUnit;
     public bool isRock;
     public Vector2Int tileNumber;
+    public bool isPlayerHere;
 }
 
 

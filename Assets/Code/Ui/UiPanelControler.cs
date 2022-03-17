@@ -18,11 +18,11 @@ public class UiPanelControler : MonoBehaviourService<UiPanelControler>
     protected override void OnCreateService()
     {
         SetListener(upArrow, InputManager.upArrow);
-        /*
-        SetListener(jump, InputManager.jump);
         SetListener(leftArrow, InputManager.leftArrow);
         SetListener(rightArrow, InputManager.rightArrow);
         SetListener(downArrow, InputManager.downArrow);
+        /*
+        SetListener(jump, InputManager.jump);
         SetListener(sword, InputManager.sword);
         SetListener(dron, InputManager.dron);
         SetListener(ulty, InputManager.ulty);
@@ -49,11 +49,11 @@ public class UiPanelControler : MonoBehaviourService<UiPanelControler>
     private void LateUpdate()
     {
         SetFalse(InputManager.upArrow);
-        /*
-        SetFalse(InputManager.jump);
         SetFalse(InputManager.rightArrow);
         SetFalse(InputManager.leftArrow);
         SetFalse(InputManager.downArrow);
+        /*
+        SetFalse(InputManager.jump);
         SetFalse(InputManager.sword);
         SetFalse(InputManager.ulty);
         SetFalse(InputManager.dron);

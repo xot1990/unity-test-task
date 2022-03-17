@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class player : AbstractUnit
 {
-    
 
     private void Start()
     {
         base.OnStart();
+        ChangeState<IdleState>();
     }
+
+
 }

@@ -17,7 +17,7 @@ public class Map : MonoBehaviourService<Map>
 
     protected override void OnCreateService()
     {
-        
+        MapInit();
     }
 
     protected override void OnDestroyService()
@@ -27,8 +27,7 @@ public class Map : MonoBehaviourService<Map>
 
     void Start()
     {
-        MapInit();
-        Debug.Log(GetTile(new Vector2Int(0, 8)).isRock);
+        
     }
 
    
@@ -53,7 +52,7 @@ public class Map : MonoBehaviourService<Map>
                 {
                     _tiles[i, k] = new TileCustom()
                     {
-                        worldPosition = _worldOffset * k + new Vector3(i + i * sizeXoffset, k) + _worldOffset * i,
+                        worldPosition = _worldOffset * k + new Vector3(i + i * sizeXoffset, k),
                         isRock = false,
                         tileNumber = new Vector2Int(i,k)
                     };
@@ -80,7 +79,7 @@ public class Map : MonoBehaviourService<Map>
 
         foreach(var tile in _tiles)
         {
-            if (tile.isRock)
+            if (tile.isRock)            
                 Instantiate(testPref, tile.worldPosition, Quaternion.identity);
         }
         
