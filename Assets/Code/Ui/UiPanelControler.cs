@@ -21,11 +21,11 @@ public class UiPanelControler : MonoBehaviourService<UiPanelControler>
         SetListener(leftArrow, InputManager.leftArrow);
         SetListener(rightArrow, InputManager.rightArrow);
         SetListener(downArrow, InputManager.downArrow);
+        SetListener(ulty, InputManager.ulty);
         /*
         SetListener(jump, InputManager.jump);
         SetListener(sword, InputManager.sword);
         SetListener(dron, InputManager.dron);
-        SetListener(ulty, InputManager.ulty);
         SetListener(pause, InputManager.pause);
         SetListener(sqaut, InputManager.sqaut);*/
     }
@@ -52,10 +52,10 @@ public class UiPanelControler : MonoBehaviourService<UiPanelControler>
         SetFalse(InputManager.rightArrow);
         SetFalse(InputManager.leftArrow);
         SetFalse(InputManager.downArrow);
+        SetFalse(InputManager.ulty);
         /*
         SetFalse(InputManager.jump);
         SetFalse(InputManager.sword);
-        SetFalse(InputManager.ulty);
         SetFalse(InputManager.dron);
         SetFalse(InputManager.pause);
         SetFalse(InputManager.sqaut);*/

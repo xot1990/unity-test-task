@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8181646010079115742}
   - component: {fileID: 8142980954291609095}
   m_Layer: 7
-  m_Name: Dog
+  m_Name: Farmer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52,7 +52,7 @@ MonoBehaviour:
   motionFlag: 0
   state: {fileID: 0}
   map: {fileID: 0}
-  motionSpeed: 3
+  motionSpeed: 6
   playerTile:
     worldPosition: {x: 0, y: 0, z: 0}
     placedUnit: {fileID: 0}
@@ -60,20 +60,20 @@ MonoBehaviour:
     tileNumber: {x: 0, y: 0}
     isPlayerHere: 0
   walk:
-  - {fileID: 1480917699468073914, guid: 09a7ce04c61996d4abe766aaa6d42672, type: 3}
-  - {fileID: 9118213209582376027, guid: 09a7ce04c61996d4abe766aaa6d42672, type: 3}
-  - {fileID: 4232618656017457076, guid: 09a7ce04c61996d4abe766aaa6d42672, type: 3}
-  - {fileID: -1146434942223613854, guid: 09a7ce04c61996d4abe766aaa6d42672, type: 3}
+  - {fileID: -284627385986098231, guid: 8b3c2374e31216e40a4aaf86d2fb2dfc, type: 3}
+  - {fileID: -2693649759984245316, guid: 8b3c2374e31216e40a4aaf86d2fb2dfc, type: 3}
+  - {fileID: -4697590009104051591, guid: 8b3c2374e31216e40a4aaf86d2fb2dfc, type: 3}
+  - {fileID: -9215070241222095863, guid: 8b3c2374e31216e40a4aaf86d2fb2dfc, type: 3}
   angry:
-  - {fileID: 748373261593968425, guid: 074a0973e2deb854298f8dc1cf1b6ee8, type: 3}
-  - {fileID: -2359721649071251821, guid: 074a0973e2deb854298f8dc1cf1b6ee8, type: 3}
-  - {fileID: 6612374894605627977, guid: 074a0973e2deb854298f8dc1cf1b6ee8, type: 3}
-  - {fileID: 5361668627280901228, guid: 074a0973e2deb854298f8dc1cf1b6ee8, type: 3}
+  - {fileID: 9093268807262632672, guid: 01d3213b0a064e5489357f91ed53bbf1, type: 3}
+  - {fileID: -6113192314060189953, guid: 01d3213b0a064e5489357f91ed53bbf1, type: 3}
+  - {fileID: 6772319772625878686, guid: 01d3213b0a064e5489357f91ed53bbf1, type: 3}
+  - {fileID: -5563435931116900145, guid: 01d3213b0a064e5489357f91ed53bbf1, type: 3}
   dirty:
-  - {fileID: 4675298679670731492, guid: 6d73c0edca326a148bd8f11da6955587, type: 3}
-  - {fileID: -6343356305408293647, guid: 6d73c0edca326a148bd8f11da6955587, type: 3}
-  - {fileID: 4117095999389584143, guid: 6d73c0edca326a148bd8f11da6955587, type: 3}
-  - {fileID: -671076752124577411, guid: 6d73c0edca326a148bd8f11da6955587, type: 3}
+  - {fileID: -7334331953504848966, guid: 7da74f0dab733e048b54fbddafe728e0, type: 3}
+  - {fileID: -5117249517182225887, guid: 7da74f0dab733e048b54fbddafe728e0, type: 3}
+  - {fileID: -3602886567794042455, guid: 7da74f0dab733e048b54fbddafe728e0, type: 3}
+  - {fileID: -7363812799561630615, guid: 7da74f0dab733e048b54fbddafe728e0, type: 3}
 --- !u!114 &5864413101428274237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,8 +179,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 1480917699468073914, guid: 09a7ce04c61996d4abe766aaa6d42672, type: 3}
+  m_SortingOrder: 3
+  m_Sprite: {fileID: -284627385986098231, guid: 8b3c2374e31216e40a4aaf86d2fb2dfc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -207,7 +207,7 @@ BoxCollider2D:
   m_Offset: {x: -0.0041017532, y: -0.031888247}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.7, y: 0.33}
+    pivot: {x: 0.5642325, y: 0.37378845}
     oldSize: {x: 4, y: 3}
     newSize: {x: 4, y: 3}
     adaptiveTilingThreshold: 0.5

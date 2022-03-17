@@ -5,12 +5,13 @@ using UnityEngine;
 public class IdleState : StateMachine
 {
     public TileCustom currentTile;
+    private Player _player;
     private Map _map;
 
     private void Awake()
     {
         _map = Map.Get();
-        GetActor<player>();
+        _player = GetComponent<Player>();
     }
 
 
@@ -28,31 +29,31 @@ public class IdleState : StateMachine
     {
         if (InputManager.GetUiKeyDown(InputManager.UiKey.UpArrow))
         {
-            actor.motionFlag = AbstractUnit.MotionFlag.Up;
-            actor.ChangeState<MoveState>();
+            _player.motionFlag = AbstractUnit.MotionFlag.Up;
+            _player.ChangeState<MoveState>();
         }
 
         if (InputManager.GetUiKeyDown(InputManager.UiKey.DownArrow))
         {
-            actor.motionFlag = AbstractUnit.MotionFlag.Down;
-            actor.ChangeState<MoveState>();
+            _player.motionFlag = AbstractUnit.MotionFlag.Down;
+            _player.ChangeState<MoveState>();
         }
 
         if (InputManager.GetUiKeyDown(InputManager.UiKey.LeftArrow))
         {
-            actor.motionFlag = AbstractUnit.MotionFlag.Left;
-            actor.ChangeState<MoveState>();
+            _player.motionFlag = AbstractUnit.MotionFlag.Left;
+            _player.ChangeState<MoveState>();
         }
 
         if (InputManager.GetUiKeyDown(InputManager.UiKey.RightArrow))
         {
-            actor.motionFlag = AbstractUnit.MotionFlag.Right;
-            actor.ChangeState<MoveState>();
+            _player.motionFlag = AbstractUnit.MotionFlag.Right;
+            _player.ChangeState<MoveState>();
         }
 
-        if (InputManager.GetUiKeyDown(InputManager.UiKey.Ulty))
+        if (InputManager.GetUiKeyDown(InputManager.UiKey.Ulty) && _player.bombTimer < 0)
         {
-            actor.ChangeState<BombPlantState>();
+            _player.ChangeState<BombPlantState>();
         }
     }
 

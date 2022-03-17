@@ -15,8 +15,11 @@ public abstract class AbstractUnit : MonoBehaviour
     public MotionFlag motionFlag;
     public StateMachine state;
     public Map map;
+    protected Game _game;
     public float motionSpeed;
     public Dictionary<string, Sprite> sprites;
+
+    protected SpriteRenderer spriteRenderer;
 
     void Start()
     {
@@ -25,12 +28,20 @@ public abstract class AbstractUnit : MonoBehaviour
     
     void Update()
     {
-        state.OnUpdateState();    
+        if (!_game.isPause)
+        {
+            state?.OnUpdateState();
+            OnUpdate();
+        }
     }
 
     private void FixedUpdate()
     {
-        state.OnFixUpdate();
+        if (!_game.isPause)
+        {
+            state?.OnFixUpdate();
+            OnFixUpdate();
+        }
     }
 
     public void ChangeState<T>() where T : StateMachine
@@ -44,5 +55,10 @@ public abstract class AbstractUnit : MonoBehaviour
     protected virtual void OnStart()
     {
         map = Map.Get();
+        _game = Game.Get();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
+
+    protected virtual void OnUpdate() { }
+    protected virtual void OnFixUpdate() { }
 }
