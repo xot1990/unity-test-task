@@ -1,19 +1,7 @@
 fileFormatVersion: 2
-guid: 6d73c0edca326a148bd8f11da6955587
+guid: 555c3a7bf78a3044cb8bca9f1608e6e0
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 4675298679670731492
-    second: dog_dirty_0
-  - first:
-      213: -6343356305408293647
-    second: dog_dirty_1
-  - first:
-      213: -671076752124577411
-    second: dog_dirty_2
-  - first:
-      213: 4117095999389584143
-    second: dog_dirty_3
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -55,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 400
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -77,7 +65,7 @@ TextureImporter:
   ignorePngGamma: 0
   applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 1
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -106,7 +94,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Windows Store Apps
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -131,106 +119,9 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Server
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: dog_dirty_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1200
-        width: 1600
-        height: 1200
-      alignment: 9
-      pivot: {x: 0.689317, y: 0.34223562}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e270acd06ff1e040800000000000000
-      internalID: 4675298679670731492
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dog_dirty_1
-      rect:
-        serializedVersion: 2
-        x: 1600
-        y: 1200
-        width: 1600
-        height: 1200
-      alignment: 9
-      pivot: {x: 0.40196076, y: 0.33772805}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1f4876c7c0fd7f7a0800000000000000
-      internalID: -6343356305408293647
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dog_dirty_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1600
-        height: 1200
-      alignment: 9
-      pivot: {x: 0.6555104, y: 0.7569302}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d79779cdf3bdfa6f0800000000000000
-      internalID: -671076752124577411
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dog_dirty_3
-      rect:
-        serializedVersion: 2
-        x: 1600
-        y: 0
-        width: 1600
-        height: 1200
-      alignment: 9
-      pivot: {x: 0.41210282, y: 0.74340755}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f0b4cc58ffcd22930800000000000000
-      internalID: 4117095999389584143
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -241,11 +132,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      dog_dirty_0: 4675298679670731492
-      dog_dirty_1: -6343356305408293647
-      dog_dirty_2: -671076752124577411
-      dog_dirty_3: 4117095999389584143
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
